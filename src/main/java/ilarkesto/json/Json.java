@@ -142,7 +142,7 @@ public class Json {
 		if (value instanceof Number) return value;
 		if (value instanceof Collection) return new ArrayList((Collection) value);
 		if (value instanceof Iterable) {
-			List ret = new ArrayList();
+			List<Object> ret = new ArrayList<Object>();
 			for (Object element : (Iterable) value) {
 				ret.add(element);
 			}
